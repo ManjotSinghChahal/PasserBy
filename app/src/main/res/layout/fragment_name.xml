@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_nameRegister"
+        tools:context=".ui.activities.loginOrSignup.fragments.email.EmailFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+               android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+
+
+            <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:id="@+id/back_name"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:background="@drawable/arrow_back"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_26sdp"/>
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rel_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_66sdp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:id="@+id/text_name"
+                        android:fontFamily="@font/avenir_65_edium"
+                        android:textColor="@color/dark_gray_new"
+                        android:textSize="@dimen/_22sdp"
+                        android:text="@string/your_name"/>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_36sdp"
+                android:layout_marginRight="@dimen/_36sdp"
+                android:orientation="vertical">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/avenir_35_light"
+                    android:inputType="textCapWords"
+                    android:id="@+id/name_register"
+                    android:background="@null"/>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/light_gray">
+            </View>
+        </LinearLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/next_s"
+                    android:textColor="@color/colorAppTheme"
+                    android:id="@+id/next_name"
+                    android:gravity="center"
+                    android:fontFamily="@font/avenir_65_edium"
+                    android:textSize="@dimen/_22sdp"
+                    android:background="@drawable/rounded_circled_theme_corners"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_26sdp"
+                    android:layout_marginRight="@dimen/_26sdp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

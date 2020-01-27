@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rootLin_login"
+        tools:context=".ui.activities.loginOrSignup.fragments.email.EmailFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+       <!-- <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+
+
+
+
+
+        </RelativeLayout>
+-->
+
+        <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:background="@drawable/arrow_back"
+                android:id="@+id/back_login"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_above="@+id/rel_name"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_36sdp"
+                    android:layout_above="@+id/login_login"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_36sdp"
+                    android:orientation="vertical">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/avenir_35_light"
+                        android:singleLine="true"
+                        android:id="@+id/email_login"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:background="@null"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@color/light_gray">
+                </View>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/avenir_65_edium"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:id="@+id/text_email"
+                        android:textColor="@color/dark_gray_new"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/email"/>
+
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:fontFamily="@font/avenir_35_light"
+                        android:id="@+id/password_email"
+                        android:layout_marginTop="@dimen/_50sdp"
+                        android:background="@null"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:background="@color/light_gray">
+                </View>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/avenir_65_edium"
+                        android:id="@+id/text_password"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textColor="@color/dark_gray_new"
+                        android:textSize="@dimen/_18sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/password"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/avenir_45_book"
+                        android:id="@+id/text_forgotPassword"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:textColor="@color/dark_gray_new"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/forgot_password"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_above="@+id/donthvacc_email"
+                    android:text="@string/login"
+                    android:textColor="@color/colorAppTheme"
+                    android:id="@+id/login_login"
+                    android:fontFamily="@font/avenir_65_edium"
+                    android:gravity="center"
+                    android:textSize="@dimen/_19sdp"
+                    android:background="@drawable/rounded_circled_theme_corners"
+                    android:layout_marginLeft="@dimen/_26sdp"
+                    android:layout_marginRight="@dimen/_26sdp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/donthvacc_email"
+                    android:fontFamily="@font/avenir_65_edium"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_above="@+id/create_email_login"
+                    android:textColor="@color/dark_gray_new"
+                    android:text="@string/dont_have_account"/>
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/avenir_65_edium"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:id="@+id/create_email_login"
+                    android:textColor="@color/colorAppTheme"
+                    android:text="@string/create_one_here"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

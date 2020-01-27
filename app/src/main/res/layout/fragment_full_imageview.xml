@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBlack"
+                tools:context=".ui.activities.home.fragments.FullImageview">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/_100sdp"
+    android:layout_marginBottom="@dimen/_100sdp">
+
+
+        <ProgressBar
+                android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                android:layout_centerInParent="true"></ProgressBar>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgview_fullImageView"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/back_white"
+            android:id="@+id/back_fullImageview"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_26sdp"/>
+
+
+
+
+
+
+
+</RelativeLayout>

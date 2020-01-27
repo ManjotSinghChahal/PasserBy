@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.home.fragments.blocked.Blocked">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:textSize="@dimen/_19sdp"
+            android:fontFamily="@font/avenir_65_edium"
+            android:text="@string/user_blocked"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="@string/ok_s"
+            android:textColor="@color/colorAppTheme"
+            android:id="@+id/blocked_ok"
+            android:fontFamily="@font/avenir_45_book"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:textSize="@dimen/_19sdp"
+            android:background="@drawable/rounded_theme_thin"
+            android:layout_marginLeft="@dimen/_26sdp"
+            android:layout_marginRight="@dimen/_26sdp"/>
+
+</RelativeLayout>

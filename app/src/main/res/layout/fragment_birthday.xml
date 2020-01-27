@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/root_dob"
+        tools:context=".ui.activities.loginOrSignup.fragments.email.EmailFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+            <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:background="@drawable/arrow_back"
+                    android:id="@+id/back_birthday"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_26sdp"
+                    android:layout_marginTop="@dimen/_30sdp"/>
+
+            <RelativeLayout
+                    android:layout_width="@dimen/_170sdp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rel_name"
+                    android:layout_centerHorizontal="true">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:fontFamily="@font/avenir_65_edium"
+                        android:layout_marginTop="@dimen/_60sdp"
+                        android:id="@+id/text_name"
+                        android:textColor="@color/dark_gray_new"
+                        android:textSize="@dimen/_22sdp"
+                        android:text="@string/enter_birthday"/>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_36sdp"
+                android:layout_marginRight="@dimen/_36sdp"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/avenir_65_edium"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/selectDatePicker"
+                    android:inputType="number"
+                    android:background="@null"/>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="@color/light_gray">
+            </View>
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="@dimen/_6sdp"
+                      android:textSize="@dimen/_8sdp"
+                      android:textColor="@color/light_gray"
+                      android:text="@string/eighteen_plus"/>
+        </LinearLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/finish_s"
+                    android:fontFamily="@font/avenir_65_edium"
+                    android:textColor="@color/colorAppTheme"
+                    android:gravity="center"
+                    android:id="@+id/finish_birthday"
+                    android:textSize="@dimen/_22sdp"
+                    android:background="@drawable/rounded_circled_theme_corners"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:layout_marginLeft="@dimen/_26sdp"
+                    android:layout_marginRight="@dimen/_26sdp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

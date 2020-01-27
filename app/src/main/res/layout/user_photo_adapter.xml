@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:id="@+id/rootPhotoAdpt"
+              android:padding="@dimen/_1sdp"
+              android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ProgressBar
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_centerInParent="true"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:transitionName="userImageTransition"
+                android:id="@+id/img_userPhotoAdapter"/>
+
+        <RelativeLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/rel_deleteImage"
+                android:layout_alignParentRight="true">
+
+            <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:id="@+id/img_del_userAdapter"
+                    android:src="@drawable/delete_white"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

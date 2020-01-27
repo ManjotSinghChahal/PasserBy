@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.loginOrSignup.fragments.welcomeToPasserby.WelcomeToPasserby">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+            android:id="@+id/text_name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/avenir_65_edium"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:textColor="@color/dark_gray_new"
+            android:textSize="@dimen/_24sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:text="@string/welcome_to_passerby"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:text="@string/next_s"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/avenir_65_edium"
+            android:textColor="@color/colorAppTheme"
+            android:id="@+id/next_welToPassby"
+            android:gravity="center"
+            android:textSize="@dimen/_22sdp"
+            android:background="@drawable/rounded_circled_theme_corners"
+            android:layout_marginBottom="@dimen/_66sdp"
+            android:layout_marginLeft="@dimen/_26sdp"
+            android:layout_marginRight="@dimen/_26sdp"/>
+
+</RelativeLayout>

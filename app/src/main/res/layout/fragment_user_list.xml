@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.activities.home.fragments.userList.UserList">
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp">
+
+
+                <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:id="@+id/img_userProfileHome"
+                        android:background="@drawable/user_new"
+                        android:layout_centerVertical="true"/>
+
+
+                <RelativeLayout
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true">
+
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgview_toggleHome"
+                            android:background="@drawable/wave_theme"/>
+
+
+                    <RelativeLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rel_toggleWave">
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rel_toggleChat"
+                            android:layout_alignParentRight="true">
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:id="@+id/rel_menu_userList"
+                        android:layout_alignParentRight="true">
+                    <ImageView
+                            android:layout_width="@dimen/_6sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/menu_grey"
+                            android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_22sdp"
+                        android:id="@+id/txt_homeTitle"
+                        android:text="@string/passerby"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorAppTheme"/>
+
+                <RelativeLayout
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/rel_map"
+                        android:layout_alignParentRight="true">
+
+                    <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_26sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/map_icon"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@color/home_grey">
+
+    </View>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/rounded_corners_grey">
+
+
+        <ImageView
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:background="@drawable/search_grey"/>
+
+        <com.example.passerby.utils.ImeHandleEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColorHint="@color/dark_gray"
+                android:layout_marginRight="@dimen/_6sdp"
+                android:imeOptions="actionSearch"
+                android:id="@+id/edit_searchHome"
+                android:cursorVisible="false"
+                android:textSize="@dimen/_16sdp"
+                android:hint="@string/search"/>
+
+    </LinearLayout>
+
+    <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/_26sdp"
+              android:gravity="center_horizontal"
+              android:textColor="@color/home_grey"
+              android:layout_marginTop="@dimen/_20sdp"
+              android:layout_marginLeft="@dimen/_46sdp"
+              android:layout_marginRight="@dimen/_46sdp"
+              android:text="@string/meet_someone_new"/>-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            android:id="@+id/recyclerview_passerby">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            android:visibility="gone"
+            android:id="@+id/recyclerview_chatHome">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

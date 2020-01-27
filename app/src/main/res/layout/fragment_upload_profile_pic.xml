@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/root_profilePicRegister"
+                tools:context=".ui.activities.loginOrSignup.fragments.uploadProfilePic.UploadProfilePic">
+
+
+    <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:id="@+id/back_uploadProfilePic"
+            android:background="@drawable/arrow_back"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+
+
+    <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_66sdp"
+            android:layout_gravity="center_horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/avenir_65_edium"
+                android:id="@+id/text_name"
+                android:textColor="@color/dark_gray_new"
+                android:textSize="@dimen/_22sdp"
+                android:text="@string/upload_profile_pic"/>
+    </RelativeLayout>
+
+
+    <ImageView
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:background="@drawable/upload_icon"
+            android:scaleType="fitXY"
+            android:id="@+id/img_uploadProfilePic"
+            android:layout_centerInParent="true"/>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:id="@+id/next_uploadProfilePic"
+            android:text="@string/next"
+            android:textColor="@color/colorAppTheme"
+            android:gravity="center"
+            android:fontFamily="@font/avenir_65_edium"
+            android:layout_above="@+id/txt_laterUploadPic"
+            android:textSize="@dimen/_19sdp"
+            android:background="@drawable/rounded_circled_theme_corners"
+            android:layout_marginLeft="@dimen/_26sdp"
+            android:layout_marginRight="@dimen/_26sdp"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_laterUploadPic"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:textColor="@color/light_gray"
+            android:fontFamily="@font/avenir_65_edium"
+            android:text="@string/do_later"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/_13sdp"
+            android:layout_gravity="center_horizontal"/>
+
+
+</RelativeLayout>
+
+
+        <!--
+        <ImageView
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/upload_icon"
+        android:scaleType="fitXY"
+        android:id="@+id/img_uploadProfilePic"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_gravity="center_horizontal"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:id="@+id/next_uploadProfilePic"
+        android:layout_alignParentBottom="true"
+        android:text="@string/next"
+        android:textColor="@color/light_gray"
+        android:gravity="center"
+        android:textSize="@dimen/_22sdp"
+        android:background="@drawable/rounded_outlining_grey"
+        android:layout_marginLeft="@dimen/_36sdp"
+        android:layout_marginRight="@dimen/_36sdp"/>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_laterUploadPic"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:textColor="@color/light_gray"
+        android:text="@string/do_later"
+        android:textSize="@dimen/_16sdp"
+        android:layout_gravity="center_horizontal"/>-->

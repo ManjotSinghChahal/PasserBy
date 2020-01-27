@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rootBlock"
+        tools:context=".ui.activities.home.fragments.reportBlock.BlockReport">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_26sdp">
+
+        <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:background="@drawable/arrow_back"
+                android:id="@+id/back_blockReport"
+                android:layout_centerVertical="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/block_report"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:textSize="@dimen/_22sdp"
+                android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@color/very_light_gray"></View>
+
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_16sdp"
+            android:text="@string/reason_for_blocking"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/block_info"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/textColorDark"></View>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:id="@+id/txt_reason1"
+              android:textColor="@color/colorBlack"
+              android:text="@string/reason_1"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/textColorDark"></View>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:id="@+id/txt_reason2"
+              android:textColor="@color/colorBlack"
+              android:text="@string/reason_2"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/textColorDark"></View>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:id="@+id/txt_reason3"
+              android:textColor="@color/colorBlack"
+              android:text="@string/reason_3"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/textColorDark"></View>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textColor="@color/colorBlack"
+              android:id="@+id/txt_reason4"
+              android:text="@string/reason_4"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/textColorDark"></View>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:textColor="@color/colorBlack"
+              android:id="@+id/txt_reason5"
+              android:text="@string/reason_5"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/textColorDark"></View>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
